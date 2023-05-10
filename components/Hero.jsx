@@ -22,15 +22,15 @@ function Hero() {
     <>
       <Stack
         sx={{
-          top: "10",
+          // top: "30%",
           // left: "10",
-          width: "100vw",
-          height: "100%",
-          alignItems: "center",
+          // width: "100%",
+          // height: "100%",
+          // alignItems: "center",
           marginTop: "5rem",
         }}
       >
-        <Grid Container>
+        <Grid container>
           <Grid
             item
             md={9}
@@ -50,7 +50,7 @@ function Hero() {
                 // marginX: "auto",
                 display: "flex",
                 flexDirection: "row",
-                gap: "2rem",
+                // gap: "2rem",
                 alignItems: "start",
                 justifyContent: "start",
               }}
@@ -91,12 +91,12 @@ function Hero() {
                 }}
               >
                 <Typography
-                  variant="h2"
+                  variant="h3"
                   sx={{
                     color: "white",
                     fontSize: {
                       // lg: "80px",
-                      sm: "60px",
+                      sm: "50px",
                       xs: "20px",
                     },
                     marginX: "2rem",

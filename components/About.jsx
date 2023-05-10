@@ -21,7 +21,7 @@ const About = () => {
     },
   ];
   const ServiceCard = ({ index, title, icon }) => (
-    <Stack sx={{ height: "100%", marginX: "2rem" }}>
+    <Stack sx={{ height: "100%" }}>
       <motion.div
         className="About green-pink-gradient"
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}

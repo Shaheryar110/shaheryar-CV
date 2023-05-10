@@ -6,6 +6,7 @@ import StarsCanvas from "@/components/canvas/Stars";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Hero from "@/components/Hero";
+import Tech from "@/components/Tech";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         </div>
         <About />
         <WorkExperience />
+        {/* <Tech /> */}
       </main>
     </>
   );
