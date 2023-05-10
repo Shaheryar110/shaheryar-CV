@@ -20,7 +20,16 @@ function Hero() {
   // }, []);
   return (
     <>
-      <Stack className="hero">
+      <Stack
+        sx={{
+          top: "10",
+          // left: "10",
+          width: "100vw",
+          height: "100%",
+          alignItems: "center",
+          marginTop: "5rem",
+        }}
+      >
         <Grid Container>
           <Grid
             item

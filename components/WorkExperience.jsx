@@ -52,7 +52,7 @@ const WorkExperience = () => {
         <motion.div variants={textVariant()}>
           <Typography
             sx={{
-              md: { textAlign: "center" },
+              textAlign: "left",
               marginTop: "1rem",
               color: "rgb(210, 206, 206)",
               fontSize: "1.4rem",
@@ -66,7 +66,7 @@ const WorkExperience = () => {
           <Typography
             className="sectionHeading"
             sx={{
-              md: { textAlign: "center" },
+              textAlign: "left",
               color: "white",
               fontWeight: "900",
               fontSize: "2rem",

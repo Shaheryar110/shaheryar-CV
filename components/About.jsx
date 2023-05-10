@@ -49,14 +49,41 @@ const About = () => {
   }, []);
   return (
     <>
-      <Stack sx={{ width: "100%", height: "100%", marginY: "8rem" }}>
+      <Stack
+        sx={{
+          width: "100%",
+          height: "100%",
+          paddingX: "7rem",
+          marginY: "5rem",
+        }}
+      >
         <motion.div
           initial={{ x: -500 }}
           animate={isMounted ? { x: 0 } : {}}
           transition={{ duration: 1 }}
         >
-          <Typography className="sectionHeading">Introduction</Typography>
-          <Typography className="sectionSubHeading">About Me</Typography>
+          <Typography
+            sx={{
+              textAlign: "left",
+              color: "white",
+              fontWeight: "900",
+              fontSize: "4rem",
+            }}
+          >
+            Introduction
+          </Typography>
+          <Typography
+            // className="sectionSubHeading"
+            sx={{
+              fontSize: "2rem",
+              textTransform: "uppercase",
+              color: "white",
+              textAlign: "left",
+              fontWeight: "800",
+            }}
+          >
+            About Me
+          </Typography>
         </motion.div>
         <motion.p
           initial={{ x: -500 }}
