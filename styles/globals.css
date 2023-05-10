@@ -262,7 +262,7 @@ a {
 #stars:after {
   content: " ";
   position: absolute;
-  /* top: 2000px; */
+  top: 2000px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -279,7 +279,7 @@ a {
 #stars2:after {
   content: " ";
   position: absolute;
-  /* top: 2000px; */
+  top: 2000px;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -296,7 +296,7 @@ a {
 #stars3:after {
   content: " ";
   position: absolute;
-  /* top: 2000px; */
+  top: 2000px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -308,7 +308,7 @@ a {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-1000px);
+    transform: translateY(-2000px);
   }
 }
 .sectionSubHeading {

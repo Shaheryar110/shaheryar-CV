@@ -99,16 +99,26 @@ function Hero() {
                       sm: "50px",
                       xs: "20px",
                     },
-                    marginX: "2rem",
-                    fontWeight: "700",
+                    marginX: "1rem",
+                    fontWeight: "800",
                   }}
                 >
                   Hello , I'm <br />
-                  <Typography variant="span" sx={{ color: "#804dee" }}>
+                  <Typography
+                    variant="span"
+                    sx={{
+                      fontSize: {
+                        // lg: "80px",
+                        sm: "50px",
+                        xs: "20px",
+                      },
+                      color: "#804dee",
+                    }}
+                  >
                     MUHAMMAD SHAHERYAR
                   </Typography>
                 </Typography>
-                <Typography sx={{ marginX: "2rem", fontSize: "1.4rem" }}>
+                <Typography sx={{ marginX: "1.1rem", fontSize: "1.4rem" }}>
                   I Develop Front End & Back End Of Web Application <br /> Using
                   Multiple FrameWorks .{" "}
                 </Typography>
@@ -117,7 +127,7 @@ function Hero() {
                     display: "flex",
                     flexDirection: "row",
                     gap: "1rem",
-                    marginLeft: "2rem",
+                    marginLeft: "1.1rem",
                     marginTop: "1rem",
                   }}
                 >

@@ -19,13 +19,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Appbar />
-        <div style={{ position: "relative", zIndex: "-1" }}>
+        <div style={{ position: "relative", zIndex: "-99" }}>
           <StarsCanvas />
           <Hero />
         </div>
+
         <About />
         <WorkExperience />
-        {/* <Tech /> */}
+        <Tech />
       </main>
     </>
   );
