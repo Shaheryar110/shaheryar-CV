@@ -48,103 +48,123 @@ const WorkExperience = () => {
   ];
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <Typography className="Description" sx={{ textAlign: "center" }}>
-          What I Have Done
-        </Typography>
-        <Typography className="sectionHeading" sx={{ textAlign: "center" }}>
-          Work Experience
-        </Typography>
-      </motion.div>
-      <Box
-        mt={10}
-        display="flex"
-        flexDirection="column"
-        // sx={{ paddingY: "1rem" }}
-      >
-        <VerticalTimeline>
-          {experiences.map((element) => {
-            return (
-              <VerticalTimelineElement
-                contentStyle={{
-                  background: "#1d1836",
-                  color: "#fff",
-                  borderRight: "7px solid  #232631",
-                }}
-                contentArrowStyle={{ borderRight: "20px solid  #232631" }}
-                key={element.key}
-                date={element.date}
-                dateClassName="date"
-                iconStyle={{ background: element.iconBg }}
-                icon={
-                  <Box
-                    sx={{
-                      backgroundColor: element.iconBg,
-                      width: "48px",
-                      height: "48px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      borderRadius: "50%",
-                    }}
-                  >
-                    <Image
-                      src={element.icon}
-                      alt="timeline icon"
-                      width={40}
-                      height={40}
-                    />
-                  </Box>
-                }
-              >
-                <Box
-                  sx={
-                    {
-                      // width: "100vw",
-                      // height: "50vh",
-                      // border: "2px solid white",
-                    }
+      <Box>
+        <motion.div variants={textVariant()}>
+          <Typography
+            sx={{
+              md: { textAlign: "center" },
+              marginTop: "1rem",
+              color: "rgb(210, 206, 206)",
+              fontSize: "1.4rem",
+              maxWidth: "48rem",
+              lineHeight: "1.875rem",
+              fontFamily: "poppins",
+            }}
+          >
+            What I Have Done
+          </Typography>
+          <Typography
+            className="sectionHeading"
+            sx={{
+              md: { textAlign: "center" },
+              color: "white",
+              fontWeight: "900",
+              fontSize: "2rem",
+            }}
+          >
+            Work Experience
+          </Typography>
+        </motion.div>
+        <Box
+          mt={10}
+          display="flex"
+          flexDirection="column"
+          // sx={{ paddingY: "1rem" }}
+        >
+          <VerticalTimeline>
+            {experiences.map((element) => {
+              return (
+                <VerticalTimelineElement
+                  contentStyle={{
+                    background: "#1d1836",
+                    color: "#fff",
+                    borderRight: "7px solid  #232631",
+                  }}
+                  contentArrowStyle={{ borderRight: "20px solid  #232631" }}
+                  key={element.key}
+                  date={element.date}
+                  dateClassName="date"
+                  iconStyle={{ background: element.iconBg }}
+                  icon={
+                    <Box
+                      sx={{
+                        backgroundColor: element.iconBg,
+                        width: "48px",
+                        height: "48px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        borderRadius: "50%",
+                      }}
+                    >
+                      <Image
+                        src={element.icon}
+                        alt="timeline icon"
+                        width={40}
+                        height={40}
+                      />
+                    </Box>
                   }
                 >
-                  <Typography
-                    variant="h3"
-                    sx={{
-                      color: "white",
-                      fontSize: "24px",
-                      fontWeight: "bold",
-                    }}
+                  <Box
+                    sx={
+                      {
+                        // width: "100vw",
+                        // height: "50vh",
+                        // border: "2px solid white",
+                      }
+                    }
                   >
-                    {element.title}
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      color: "secondary",
-                      fontSize: "1.2rem",
-                      fontWeight: "500",
-                      margin: 0,
-                      width: "40vw",
-                      overflow: "clip",
-                    }}
-                  >
-                    {element.company_name}
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    className="Description"
-                    sx={{
-                      fontSize: "1rem",
-                      fontWeight: "500",
-                      marginTop: "10px",
-                    }}
-                  >
-                    {element.points}
-                  </Typography>
-                </Box>
-              </VerticalTimelineElement>
-            );
-          })}
-        </VerticalTimeline>
+                    <Typography
+                      variant="h3"
+                      sx={{
+                        color: "white",
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {element.title}
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        color: "secondary",
+                        fontSize: "1.2rem",
+                        fontWeight: "500",
+                        margin: 0,
+                        width: "40vw",
+                        overflow: "clip",
+                      }}
+                    >
+                      {element.company_name}
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      className="Description"
+                      sx={{
+                        fontSize: "1rem",
+                        fontWeight: "500",
+                        marginTop: "10px",
+                      }}
+                    >
+                      {element.points}
+                    </Typography>
+                  </Box>
+                </VerticalTimelineElement>
+              );
+            })}
+          </VerticalTimeline>
+        </Box>
       </Box>
     </>
   );
