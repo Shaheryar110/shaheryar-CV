@@ -7,6 +7,9 @@ import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Hero from "@/components/Hero";
 import Tech from "@/components/Tech";
+import Projects from "@/components/Projects";
+import EarthCanvas from "@/components/canvas/Earth";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -21,12 +24,18 @@ export default function Home() {
         <Appbar />
         <div style={{ position: "relative", zIndex: "-99" }}>
           <StarsCanvas />
-          <Hero />
         </div>
+        <Hero />
 
         <About />
         <WorkExperience />
         <Tech />
+        <div style={{ position: "relative", zIndex: "-99" }}>
+          <StarsCanvas />
+        </div>
+        <Projects />
+        <Contact />
+        {/* <EarthCanvas /> */}
       </main>
     </>
   );

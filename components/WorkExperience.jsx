@@ -99,8 +99,6 @@ const WorkExperience = () => {
                     <Box
                       sx={{
                         backgroundColor: element.iconBg,
-                        width: "48px",
-                        height: "48px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -110,8 +108,9 @@ const WorkExperience = () => {
                       <Image
                         src={element.icon}
                         alt="timeline icon"
-                        width={40}
-                        height={40}
+                        width={45}
+                        height={45}
+                        style={{ marginTop: "0.1rem" }}
                       />
                     </Box>
                   }

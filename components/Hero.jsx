@@ -160,8 +160,12 @@ function Hero() {
               </Stack>
             </Stack>
           </Grid>
-          <Grid item md={3}>
-            <Box>
+          <Grid
+            item
+            md={3}
+            sx={{ md: { display: "flex" }, sm: { display: "none" } }}
+          >
+            <Box sx={{ md: { display: "flex" }, sm: { display: "none" } }}>
               <Lottie
                 loop
                 animationData={robots}
