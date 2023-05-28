@@ -154,6 +154,9 @@ const WorkExperience = () => {
                         fontSize: "1rem",
                         fontWeight: "500",
                         marginTop: "10px",
+                        overFlowX: "hidden",
+                        paddingRight: "0.2rem",
+                        // width: "100%",
                       }}
                     >
                       {element.points}

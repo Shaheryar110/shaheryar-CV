@@ -53,7 +53,7 @@ const About = () => {
         sx={{
           width: "100%",
           height: "100%",
-          paddingX: "7rem",
+          paddingX: { md: "2rem", xs: "0%" },
           marginY: "5rem",
         }}
       >
@@ -67,7 +67,7 @@ const About = () => {
               textAlign: "left",
               color: "white",
               fontWeight: "900",
-              fontSize: "4rem",
+              fontSize: { md: "4rem", sm: "3rem", xs: "2rem" },
             }}
           >
             Introduction
@@ -75,7 +75,7 @@ const About = () => {
           <Typography
             // className="sectionSubHeading"
             sx={{
-              fontSize: "2rem",
+              fontSize: { sm: "2rem", xs: "1.6rem" },
               textTransform: "uppercase",
               color: "white",
               textAlign: "left",

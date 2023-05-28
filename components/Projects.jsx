@@ -20,7 +20,7 @@ const Works = () => {
     {
       name: "MeriBilty",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Meribilty is situating itself to be the main accomplice of decision for all partners in the logistic sector by offering a completely coordinated digitalized stage for clients chasing and giving goods transportation services. Developing and implementing technology solutions is a core pillar for Meribilty. We are upgrading the utilization of innovation to drive efficiencies joined forces with driving innovation organizations to foster frameworks offering best-in-class administration and client experience. ",
       tags: [
         {
           name: "react",
@@ -41,7 +41,7 @@ const Works = () => {
     {
       name: "Rodio App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Our mission is to increase the safety, efficiency, and sustainability of the operations that power the global economy. We are the pioneer of the Connected Operations Cloud, which allows organizations that depend on physical operations to harness IoT data to develop actionable insights and improve their operations. Werner CIO Looks to Outfit Company Trucks With AI-Enabled Tech.Werner CIO Looks to Outfit Company Trucks With AI-Enabled Tech",
       tags: [
         {
           name: "React js",
@@ -62,7 +62,7 @@ const Works = () => {
     {
       name: "Austin Trim ",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Austin Trim is an easy and online manufacturing platform that meets the needs of apparel manufacturers, boutiques, cut & sew apparel & street wear brands. We offer customers a wide range of options to pick and choose from, with low minimums and affordable pricing. From apparel and accessories to labels and packaging, giving customers high quality artwork setup and designing services, Austin Trim is one of the most liked and recommended platform for all labels and trim solutions.",
       tags: [
         {
           name: "Vue js",
@@ -83,7 +83,7 @@ const Works = () => {
     {
       name: "Komplai",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Komplai restores order to chaos, ensuring you are kept updated on developments across the sector. Komplai digests regulatory information from multiple intersecting sources and feeds this back intelligently so that you can stay on track with compliance requirements.",
       tags: [
         {
           name: "Next js",

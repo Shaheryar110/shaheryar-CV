@@ -44,7 +44,11 @@ const Contact = () => {
   };
 
   return (
-    <Grid container spacing={2} sx={{ marginY: "6rem", marginX: "4rem" }}>
+    <Grid
+      container
+      spacing={2}
+      sx={{ marginY: "6rem", marginX: { md: "4rem", xs: "0.5rem" } }}
+    >
       <Grid
         item
         lg={6}

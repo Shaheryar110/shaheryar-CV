@@ -30,10 +30,10 @@ function Hero() {
           marginTop: "5rem",
         }}
       >
-        <Grid container>
+        <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
           <Grid
             item
-            md={9}
+            lg={8}
             sx={{
               display: "flex",
               flexDirection: "row",
@@ -110,30 +110,39 @@ function Hero() {
                       fontSize: {
                         // lg: "80px",
                         sm: "50px",
-                        xs: "20px",
+                        xs: "35px",
                       },
                       color: "#804dee",
+                      width: "100%",
                     }}
                   >
                     MUHAMMAD SHAHERYAR
                   </Typography>
                 </Typography>
-                <Typography sx={{ marginX: "1.1rem", fontSize: "1.4rem" }}>
-                  I Develop Front End & Back End Of Web Application <br /> Using
+                <Typography
+                  sx={{
+                    marginX: "1.1rem",
+                    fontSize: "1.4rem",
+                    textAlign: "justify",
+                  }}
+                >
+                  I Develop Front End & Back End Of Web Application Using
                   Multiple FrameWorks .{" "}
                 </Typography>
                 <Stack
                   sx={{
                     display: "flex",
-                    flexDirection: "row",
-                    gap: "1rem",
+                    flexDirection: { sm: "row", xs: "column" },
+                    gap: { md: "1rem", xs: "0.5rem" },
                     marginLeft: "1.1rem",
                     marginTop: "1rem",
+                    width: { sm: "100%", xs: "50%" },
                   }}
                 >
                   <Button
                     variant="contained"
                     sx={{
+                      marginY: "0.1rem",
                       backgroundColor: "#804dee",
                       ":hover": { backgroundColor: "#6630db" },
                     }}
@@ -143,12 +152,14 @@ function Hero() {
                   <Button
                     variant="outlined"
                     sx={{
+                      marginY: "0.1rem",
                       color: "white",
                       borderColor: "white",
                       ":hover": {
                         backgroundColor: "#804dee",
                         borderColor: "#804dee",
                       },
+                      // marginTop: { sm: "0%", xs: "1rem" },
                     }}
                   >
                     View Projects{" "}
@@ -160,17 +171,22 @@ function Hero() {
               </Stack>
             </Stack>
           </Grid>
-          <Grid
-            item
-            md={3}
-            sx={{ md: { display: "flex" }, sm: { display: "none" } }}
-          >
-            <Box sx={{ md: { display: "flex" }, sm: { display: "none" } }}>
+          <Grid item md={3}>
+            <Box
+              sx={{
+                marginTop: { lg: "3rem", sm: "1rem" },
+                display: { lg: "block", xs: "none" },
+              }}
+            >
               <Lottie
                 loop
                 animationData={robots}
                 play
-                style={{ width: "20rem", height: "20rem" }}
+                style={{
+                  width: { lg: "20rem", sm: "15rem" },
+
+                  height: "20rem",
+                }}
               />
             </Box>
           </Grid>
