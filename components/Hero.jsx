@@ -7,8 +7,13 @@ import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import robots from "../lottieFILES/robots.json";
 import Lottie from "react-lottie-player";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+// import resume from "../public/resume.docx";
 
 function Hero() {
+  const openCV = () => {
+    const fileUrl = "../public/resume.docx"; // Replace with the actual URL of your PDF file
+    window.open(fileUrl, "_blank");
+  };
   // useEffect(() => {
   //   const animation = lottie.loadAnimation({
   //     container: document.querySelector(".hero"),
@@ -141,6 +146,7 @@ function Hero() {
                 >
                   <Button
                     variant="contained"
+                    onClick={openCV}
                     sx={{
                       marginY: "0.1rem",
                       backgroundColor: "#804dee",

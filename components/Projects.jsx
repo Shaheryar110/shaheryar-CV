@@ -14,6 +14,7 @@ import austin from "../public/austin.png";
 import meribilty from "../public/meribilty.png";
 import komplai from "../public/komplai.png";
 import fues from "../public/fues.png";
+import brain from "../public/brain.png";
 
 const Works = () => {
   const projects = [
@@ -101,6 +102,27 @@ const Works = () => {
       image: komplai,
       source_code_link: "komplai-next.vercel.app",
     },
+    {
+      name: "MATCH THE IMAGE GAME ",
+      description:
+        "A game that will improve your memory and brain power.You must memorize a board with several pairs of disordered images.After a short time they will cover up and you will have to find all the couples, but hurry up, time runs against you.",
+      tags: [
+        {
+          name: "React js",
+          color: "#2f80ed",
+        },
+        {
+          name: "Javascript js",
+          color: "#38ef7d",
+        },
+        {
+          name: "CSS",
+          color: "#ec008c",
+        },
+      ],
+      image: brain,
+      source_code_link: "matchtheimage.vercel.app",
+    },
   ];
   const ProjectCard = ({ index, name, description, tags, image }) => {
     return (
@@ -111,15 +133,17 @@ const Works = () => {
           flexDirection: "column",
           alignItems: "center",
           fontFamily: "sans-serif",
+          width: "100%",
+          height: "fit-content",
           // paddingX: { md: "4rem", xs: "0%" },
-          // animation: `${fadeIn("up", "spring", index * 0.5, 0.75)} 0.5s ease`,
+          animation: `${fadeIn("up", "spring", index * 0.5, 0.75)} 0.5s ease`,
         }}
       >
         <div
           style={{
             // position: "relative",
             width: "100%",
-            height: "230px",
+            height: "fit-content",
             padding: "1rem",
           }}
         >
@@ -128,14 +152,14 @@ const Works = () => {
             alt="project_image"
             style={{
               width: "100%",
-              height: "100%",
+              height: "150px",
               objectFit: "cover",
               borderRadius: "16px",
             }}
           />
         </div>
 
-        <div style={{ marginTop: "0.5rem", padding: "1rem" }}>
+        <div style={{ padding: "1rem" }}>
           <h3
             style={{
               color: "white",
@@ -151,6 +175,7 @@ const Works = () => {
               marginTop: "0.5rem",
               color: "secondary",
               fontSize: "1rem",
+              textAlign: "justify",
             }}
           >
             {description}
@@ -220,22 +245,19 @@ const Works = () => {
           </motion.p>
         </Box>
 
-        <Box sx={{ marginTop: "3rem" }}>
-          <Grid
-            container
-            gap={2}
-            sx={{ justifyContent: "center", alignItems: "center" }}
-          >
+        <Box sx={{ marginTop: "3rem", width: "100%" }}>
+          <Grid container gap={4} sx={{ justifyContent: "center" }}>
             {projects.map((project, index) => {
               return (
                 <Grid
-                  item
-                  lg={3}
-                  md={4}
+                  items
+                  lg={4}
+                  md={5}
                   sx={{
                     backgroundColor: "#151030",
                     borderRadius: "1rem",
                     padding: "0px",
+                    height: "auto",
                   }}
                 >
                   <ProjectCard

@@ -27,7 +27,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+  const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -40,7 +40,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+    alert("your message has been sent");
+    setLoading(true); // Set loading to true immediately
+
+    setTimeout(() => {
+      setLoading(false); // Set loading to false after 2 seconds
+    }, 2000);
   };
 
   return (
@@ -101,6 +106,19 @@ const Contact = () => {
                 placeholder="What's your good name?"
                 // color="#aaa6c3"
                 sx={{
+                  "& input": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                  },
+                  "&:hover .MuiInputBase-root": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                    // height: "100%",
+                  },
                   // backgroundColor: "grey",
                   width: "100%",
                   "& input::placeholder": {
@@ -141,6 +159,19 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your web address?"
                 sx={{
+                  "& input": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                  },
+                  "&:hover .MuiInputBase-root": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                    // height: "100%",
+                  },
                   // backgroundColor: "grey",
                   width: "100%",
                   "& input::placeholder": {
@@ -181,6 +212,19 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What you want to say?"
                 sx={{
+                  "& input": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                  },
+                  "&:hover .MuiInputBase-root": {
+                    color: "#804DEE",
+                    borderColor: "#CEBBB8",
+                    borderRadius: "1.3rem",
+                    backgroundColor: "#151030",
+                    // height: "100%",
+                  },
                   height: "200px",
                   // backgroundColor: "grey",
                   width: "100%",
@@ -223,8 +267,7 @@ const Contact = () => {
                 shadowColor: "#050816",
               }}
             >
-              Send Message
-              {/* {loading ? "Sending..." : "Send"} */}
+              {loading ? "Sending..." : "Send"}
             </Button>
           </Box>
         </motion.div>
@@ -234,6 +277,7 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           sx={{
             // flex: { xl: 1, md: "auto" },
+            display: { md: "block", xs: "none" },
             height: { md: "650px", xs: "350px" },
           }}
         >
