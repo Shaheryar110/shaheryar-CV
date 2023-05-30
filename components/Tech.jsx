@@ -129,11 +129,12 @@ const Tech = () => {
           fontWeight: "900",
           fontSize: "4rem",
           marginY: "4rem",
+          paddingX: { md: "4rem", xs: "0%" },
         }}
       >
         SKILLS
       </Typography>
-      <Grid container sx={{ justifyContent: "center" }}>
+      <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
         {technologies.map((technology) => (
           <Grid
             item

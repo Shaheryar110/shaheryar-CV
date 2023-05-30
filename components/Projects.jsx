@@ -111,6 +111,7 @@ const Works = () => {
           flexDirection: "column",
           alignItems: "center",
           fontFamily: "sans-serif",
+          // paddingX: { md: "4rem", xs: "0%" },
           // animation: `${fadeIn("up", "spring", index * 0.5, 0.75)} 0.5s ease`,
         }}
       >
@@ -185,70 +186,72 @@ const Works = () => {
   };
   return (
     <>
-      <Typography
-        variant="h2"
-        sx={{
-          textAlign: "left",
-          color: "white",
-          fontWeight: "900",
-          fontSize: "4rem",
-          marginY: "3rem",
-        }}
-      >
-        Projects.
-      </Typography>
-
-      <Box sx={{ width: "100%", display: "flex" }}>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          style={{
-            // mt: 3,
-            color: "#888",
-            fontSize: "1.5rem",
-            // maxWidth: "3xl",
-            lineHeight: "30px",
-            fontFamily: "sans-serif",
+      <Box sx={{ paddingX: { md: "4rem", xs: "0%" } }}>
+        <Typography
+          variant="h2"
+          sx={{
+            textAlign: "left",
+            color: "white",
+            fontWeight: "900",
+            fontSize: "4rem",
+            marginY: "3rem",
           }}
         >
-          Following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. It reflects my ability to
-          solve complex problems, work with different technologies, and manage
-          projects effectively.
-        </motion.p>
-      </Box>
+          Projects.
+        </Typography>
 
-      <Box sx={{ marginTop: "3rem" }}>
-        <Grid
-          container
-          gap={2}
-          sx={{ justifyContent: "center", alignItems: "center" }}
-        >
-          {projects.map((project, index) => {
-            return (
-              <Grid
-                item
-                lg={3}
-                md={4}
-                sx={{
-                  backgroundColor: "#151030",
-                  borderRadius: "1rem",
-                  padding: "0px",
-                }}
-              >
-                <ProjectCard
-                  key={`project-${index}`}
-                  index={index}
-                  name={project.name}
-                  description={project.description}
-                  tags={project.tags}
-                  image={project.image}
-                  source_code_link={project.source_code_link}
-                />
-              </Grid>
-            );
-          })}
-        </Grid>
+        <Box sx={{ width: "100%", display: "flex" }}>
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            style={{
+              // mt: 3,
+              color: "#888",
+              fontSize: "1.5rem",
+              // maxWidth: "3xl",
+              lineHeight: "30px",
+              fontFamily: "sans-serif",
+            }}
+          >
+            Following projects showcase my skills and experience through
+            real-world examples of my work. Each project is briefly described
+            with links to code repositories and live demos. It reflects my
+            ability to solve complex problems, work with different technologies,
+            and manage projects effectively.
+          </motion.p>
+        </Box>
+
+        <Box sx={{ marginTop: "3rem" }}>
+          <Grid
+            container
+            gap={2}
+            sx={{ justifyContent: "center", alignItems: "center" }}
+          >
+            {projects.map((project, index) => {
+              return (
+                <Grid
+                  item
+                  lg={3}
+                  md={4}
+                  sx={{
+                    backgroundColor: "#151030",
+                    borderRadius: "1rem",
+                    padding: "0px",
+                  }}
+                >
+                  <ProjectCard
+                    key={`project-${index}`}
+                    index={index}
+                    name={project.name}
+                    description={project.description}
+                    tags={project.tags}
+                    image={project.image}
+                    source_code_link={project.source_code_link}
+                  />
+                </Grid>
+              );
+            })}
+          </Grid>
+        </Box>
       </Box>
     </>
   );

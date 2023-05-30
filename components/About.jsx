@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import backend from "../public/assets/backend.png";
 import web from "../public/assets/web.png";
 import Image from "next/image";
-// import { Tilt } from "react-tilt";
 
 const About = () => {
   const services = [
@@ -53,8 +52,11 @@ const About = () => {
         sx={{
           width: "100%",
           height: "100%",
-          paddingX: { md: "2rem", xs: "0%" },
+          paddingX: { md: "4rem", xs: "0%" },
           marginY: "5rem",
+          // alignItems: "center",
+          // justifyContent: "center",
+          textAlign: "left",
         }}
       >
         <motion.div

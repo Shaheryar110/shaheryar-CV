@@ -48,7 +48,7 @@ const WorkExperience = () => {
   ];
   return (
     <>
-      <Box>
+      <Box sx={{ paddingX: { md: "4rem", xs: "0%" } }}>
         <motion.div variants={textVariant()}>
           <Typography
             sx={{
@@ -91,7 +91,7 @@ const WorkExperience = () => {
                     borderRight: "7px solid  #232631",
                   }}
                   contentArrowStyle={{ borderRight: "20px solid  #232631" }}
-                  key={element.key}
+                  key={element.id}
                   date={element.date}
                   dateClassName="date"
                   iconStyle={{ background: element.iconBg }}

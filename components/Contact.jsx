@@ -47,7 +47,7 @@ const Contact = () => {
     <Grid
       container
       spacing={2}
-      sx={{ marginY: "6rem", marginX: { md: "4rem", xs: "0.5rem" } }}
+      sx={{ marginY: "6rem", paddingX: { md: "4rem", xs: "0.5rem" } }}
     >
       <Grid
         item
@@ -229,12 +229,12 @@ const Contact = () => {
           </Box>
         </motion.div>
       </Grid>
-      <Grid item lg={6} sx={{ width: "100%" }}>
+      <Grid item lg={6}>
         <Box
           variants={slideIn("right", "tween", 0.2, 1)}
           sx={{
             // flex: { xl: 1, md: "auto" },
-            height: { xl: "auto", md: "650px", xs: "350px" },
+            height: { md: "650px", xs: "350px" },
           }}
         >
           <EarthCanvas />
