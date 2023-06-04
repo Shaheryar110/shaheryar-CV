@@ -141,7 +141,7 @@ const Tech = () => {
             lg={3}
             md={4}
             sm={6}
-            sx={{ paddingY: "1rem" }}
+            sx={{ paddingY: "1rem", display: { md: "block", xs: "none" } }}
             key={technology.name}
           >
             <BallCanvas icon={technology.icon} />

@@ -40,7 +40,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("your message has been sent");
+    // alert("your message has been sent");
     setLoading(true); // Set loading to true immediately
 
     setTimeout(() => {
@@ -272,7 +272,7 @@ const Contact = () => {
           </Box>
         </motion.div>
       </Grid>
-      <Grid item lg={6}>
+      <Grid item lg={6} sx={{ display: { md: "block", xs: "none" } }}>
         <Box
           variants={slideIn("right", "tween", 0.2, 1)}
           sx={{
